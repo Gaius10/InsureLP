@@ -1,0 +1,245 @@
+a { color: inherit; text-decoration: inherit; }
+h1, h2, h3 { font-family: "DM Serif Display", serif; }
+p {
+  line-height: 1.3rem;
+  font-family: Karla, sans-serif;
+}
+
+/*********************************************************
+ * Navbar
+ */
+
+body > nav {
+  display: flex;
+  flex-direction: column;
+}
+
+body > nav .navbar-brand {
+  box-sizing: border-box;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.4rem 0.5rem;
+}
+body > nav .navbar-brand > img:last-child {
+  margin-top: -2.5%;
+  height: 200%;
+}
+
+body > nav ul.navbar-content {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 64px);
+  display: flex;
+  display: none;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  background-color: hsl(270, 9%, 17%);
+  color: hsl(0, 0%, 98%);
+
+  background-image: url('./images/bg-pattern-mobile-nav.svg');
+  background-position-y: bottom 0;
+  background-repeat: no-repeat;
+}
+
+body > nav ul.navbar-content li {
+  display: flex;
+  flex-direction: row;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: 1.5rem;
+  font-family: "Karla";
+  font-weight: 700;
+
+}
+
+body > nav ul.navbar-content li a {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0.8rem 0;
+  border: 2px transparent solid;
+}
+
+body > nav ul.navbar-content li a:active,
+body > nav ul.navbar-content li a:hover {
+  border: 2px hsl(0, 0%, 98%) solid;
+}
+
+/*********************************************************
+ * Header
+ */
+
+body > header {
+  display: flex;
+  flex-direction: column;
+}
+
+body > header > article {
+  position: relative;
+}
+body > header > article > img#intro-left-mobile {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+body > header > article > img#intro-right-mobile {
+  position: absolute;
+  right: 0;
+  bottom: -50%;
+}
+
+.purple-content {
+  background-color: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  row-gap: 2rem;
+}
+
+.purple-content > h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.purple-content > a.flat-button {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border: 2px hsl(0, 0%, 98%) solid;
+}
+
+/*********************************************************
+ * Main content
+ */
+
+div.divisor {
+  box-sizing: border-box;
+
+  height: 0;
+  max-width: 30%;
+
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+
+  border-top: 2px hsl(273, 4%, 51%) solid;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main > .icon-cards > h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+main > .icon-cards article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+main > .icon-cards article h3 {
+  font-size: 1.4rem;
+}
+
+main > .icon-cards article p {
+  text-align: center;
+  color: hsl(273, 4%, 51%);
+}
+
+main > .purple-content {
+  background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
+  background-position-x: right 0;
+  background-repeat: no-repeat;
+  margin: 10rem 1rem;
+}
+main > .purple-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+main > .purple-content a {
+  margin-top: 0.5rem;
+}
+
+/*********************************************************
+ * Footer
+ */
+
+footer > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  row-gap: 2rem;
+  box-sizing: border-box;
+
+  padding: 3rem 0;
+
+  background-image: url('./images/bg-pattern-footer-mobile.svg');
+  background-position-y: top 0;
+  background-repeat: no-repeat;
+}
+
+footer .divisor2 {
+  border-top: 2px hsl(273, 4%, 51%) solid;
+  opacity: 0.4;
+  width: 90%;
+  margin: 3rem auto;
+}
+
+footer .our-links,
+footer .our-links article,
+footer .our-links article ul  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: Karla;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer .our-links article {
+  margin-bottom: 4rem;
+  width: 65%;
+}
+
+footer .our-links article h4 {
+
+  color:hsl(273, 4%, 51%);
+  opacity: 0.7;
+
+  margin-bottom: 2rem;
+}
+
+footer .our-links ul {
+  width: 100%;
+}
+
+footer .our-links ul li {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .our-links ul li a {
+  width: 100%;
+  height: 100%;
+  padding: 0.6rem 0;
+}
+
